@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Online Profile</title>
+</head>
+<body class="dark-theme">
+    <header style="height: 7vh; position: relative;" id="heder">
+        <div id="proInfo" class="profile-info">
+            <h1>Chamith Eranda</h1>
+            <nav>
+                <ul style="padding-top: 0; " id="ul1"class="nav-list" >
+                    <li id="li1"><a href="#profile" style="text-decoration: none;">About Me</a></li>
+                    <li id="li1"><a href="#container1" style="text-decoration: none;">Education</a></li>
+                    <li id="li1"><a href="#container2" style="text-decoration: none;">Projects</a></li>
+                    <li id="li1"><a href="#container3" style="text-decoration: none;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>              
+    </header>
+    <div id="profile">
+        <div id="proPic" class="profile-picture">
+            <img src="pictures/profile photo.jpg" alt="Profile Picture" style="width: 300px; height: 450px; position: inherit;" id="pic">
+        </div>
+        <div id="cont1">
+            <h3 style="margin-left:6vw;font-size: 3rem ;color: rgb(192, 60, 229);" >About Me</h3>
+            <p id="aboutMe">
+                As an aspiring Software Engineering undergraduate, I'm driven to become a skilled Data Scientist. I've completed Coursera courses . I share my Data Science insights through my blog articles . Excited to leverage my skills in making a positive impact through data-driven solutions.
+                <br>I'm an enthusiastic self-learner with a passion for exploring various topics. My curiosity drives me to continuously expand my knowledge and skills through self-study, enabling me to approach challenges with a well-rounded perspective.
+            </p>
+        </div>
+    </div>
+
+    <div class="expandable-container1" id="container1" style="padding-top: 3 vw; background-color: #595b64;"> 
+        <div class="work-experience" onclick="click1()" >
+            <i class="fas fa-book" style="padding-left: 3vw; padding-top: 3vh;" ></i> Education
+        </div>
+        <h3 id="hedu" style="font-size: 3rem; margin-left: 30vw;">Higher Education</h3>
+            <div style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 2vh;">
+                <i class="fas fa-university" style="padding-left:20vw; padding-right: 5vw ; font-size: 5rem; " ></i>
+                <h2>University of Kelaniya , Sri Lanka</h2>
+            </div>
+
+            <h3 id="hedu" style="font-size: 3rem; margin-left: 30vw;">College</h3>
+            <div style="display: grid; grid-template-columns: auto 1fr; align-items: center; padding-bottom: 2vh;">
+                <i class="fas fa-school" style="padding-left:20vw; padding-right: 5vw ; font-size: 4rem; "></i>
+                <h2>St.Aloysius College , Galle</h2>
+            </div>
+
+    </div>
+
+
+    <div class="expandable-container2" id="container2" style="margin-top:3vh; padding-top: 1vh; background-color: #595b64;">
+        <div class="Projects" onclick="click2()" >
+            <i class="fas fa-project-diagram" style="padding-left: 3vw; padding-top: 3vh;"></i> Projects
+        </div>
+        <div id="prLink" >
+           <div id="pr1" style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh; margin-top: 5vh;">
+                <i class="fas fa-book-open"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+                <a href="https://github.com/chamitheranda/ecommerce-app/tree/master/backend/src/main/java/com/example/backend" style="font-size: 2rem; color: azure; text-decoration: none;">e-commerce Web Application</a>
+           </div>
+           <div id="pr1" style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh;">
+                <i class="fas fa-book-open"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+                <a href="https://github.com/chamitheranda/PointOfSale-Backend-SprigBoot" style="font-size: 2rem;color: azure; text-decoration: none;">POS Application</a>
+            </div>
+            <div id="pr1" style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh;">
+                <i class="fas fa-book-open"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+                <a href="https://github.com/chamitheranda/Bchat-ChatBot" style="font-size: 2rem; color: azure; text-decoration: none;">AI ChatBot</a>
+           </div>
+           <div id="pr1" style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh;">
+                <i class="fas fa-book-open"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+                <a href="https://github.com/chamitheranda/ML-Project/tree/CoffeeCultivationModel/Coffe%20Cultivation%20Model" style="font-size: 2rem;color: azure; text-decoration: none;">Coffe Cultivation Predictor</a>
+            </div>
+            <div id="pr1" style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh;">
+                <i class="fas fa-book-open"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+                <a href="https://github.com/chamitheranda/Java-Script-2D-Game" style="font-size: 2rem;color: azure; text-decoration: none;">2D Game</a>
+            </div>
+        </div>  
+
+    </div>
+   
+    
+    <div class="expandable-container3" id="container3" style="margin-top: 3.4vh; padding-top: 1vh;background-color: #595b64;">
+        <div class="contacts" onclick="click3()">
+            <i class="fas fa-phone" style="padding-left: 3vw; padding-top: 3vh;"></i> Contacts
+        </div>
+        <div  style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh; margin-top: 5vh;">
+            <i class="fab fa-linkedin"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+            <a href="#" style="font-size: 2rem; color: azure; text-decoration: none;">Chamith Eranda</a>
+       </div>
+       <div  style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh; margin-top: 5vh;">
+            <i class="fas fa-mail-bulk"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+            <a href="#" style="font-size: 2rem; color: azure; text-decoration: none;">erandachamith322@gmail.com</a>
+        </div>
+        <div  style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh; margin-top: 5vh;">
+            <i class="fab fa-github"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+            <a href="#" style="font-size: 2rem; color: azure; text-decoration: none;">Chamith Eranda</a>
+       </div>
+       <div  style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh; margin-top: 5vh;">
+         <i class="fab fa-medium"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+            <a href="#" style="font-size: 2rem; color: azure; text-decoration: none;">Chamith Eranda</a>
+       </div>
+      <div  style="display: grid; grid-template-columns: auto 1fr; align-items: center; margin-bottom: 10vh; margin-top: 5vh;">
+             <i class="fab fa-whatsapp"style="padding-left:26vw; padding-right: 7vw ; font-size: 4rem;"></i>
+             <a href="#" style="font-size: 2rem; color: azure; text-decoration: none;">076-831 35 96</a>
+      </div>
+
+    </div>
+
+
+  <footer>
+    <div class="footer-content" >
+      <div class="footer-links" style="padding-top: 2vh;">
+        <a href="#" style="padding-left: 1vw; ">Home</a>
+        <a href="#" style="padding-left: 4vw;">Portfolio</a>
+        <a href="#container3" style="padding-left: 5vw;">Contact</a>
+      </div>
+    <div class="footer-social" >
+        <a href="#"><i class="fab fa-facebook" style="padding: 2vw;"></i></a>
+        <a href="#"><i class="fab fa-twitter" style="padding: 2vw;"></i></a>
+        <a href="#"><i class="fab fa-instagram" style="padding: 2vw;"></i></a>
+        <a href="#"><i class="fab fa-linkedin" style="padding: 2vw;"></i></a>
+        <a href="#"><i class="fab fa-whatsapp" style="padding: 2vw;"></i></a>
+      </div>
+      <p style="padding-bottom: 3vh;">&copy; 2023 Chamith Eranda . All rights reserved.</p>
+    </div>
+  </footer>
+<script src="script.js"> </script>
+</body>
+</html>
