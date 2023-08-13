@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400&display=swap');
 :root {
-    --background-color: #1f1f1f; /* Dark background color */
-    --text-color: #3c2020; /* Light text color for dark background */
-    /* Define other color variables for dark theme */
+    --background-color: #1f1f1f; 
+    --text-color: #3c2020; 
 }
 
 body{
@@ -12,7 +11,6 @@ body{
 body.dark-theme {
     background-color: var(--background-color);
     color: var(--text-color);
-    /* Apply other color variables for dark theme */
 }
   
 #proInfo {
@@ -27,7 +25,6 @@ body.dark-theme {
     background-color: #989191; /* Add a background color for visualization */
 }
   
-  /* Navigation links */
 #proInfo nav ul {
     list-style: none;
     display: flex;
@@ -36,13 +33,11 @@ body.dark-theme {
     padding: 0;
 }
   
-  /* List items within navigation */
 #li1 {
     font-size: 2rem;
     text-decoration:none;
 }
   
-  /* Profile name */
 #proInfo h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -58,13 +53,12 @@ body.dark-theme {
     width: 1000px;
 }
 
-
 #aboutMe {
     flex-grow: 1;
     margin-left: 3vw;
-    font-family: Arial, sans-serif; /* Use a common sans-serif font */
-    line-height: 5vh; /* Adjust line height for better readability */
-    color: #b9abab; /* Use a darker gray color for text */
+    font-family: Arial, sans-serif; 
+    line-height: 5vh; 
+    color: #b9abab; 
     font-size: 1.5rem;
 }
 
@@ -85,7 +79,6 @@ body.dark-theme {
   cursor: pointer;
 }
 
-
 .work-experience {
   font-size: 3rem;
   margin-bottom: 1vh;
@@ -95,10 +88,6 @@ body.dark-theme {
 .work-experience i {
   margin-right: 2vh;
 }
-
- 
-
-
 
 .expandable-container2 {
   max-height: 12vh;
@@ -117,11 +106,6 @@ body.dark-theme {
 cursor: pointer;
 }
 
-
-
-/* Apply the animation to the element with the ID "animatedDiv" */
-
-
 .Projects {
   font-size: 3rem;
   margin-bottom: 1vh;
@@ -133,15 +117,11 @@ margin-right: 2vh;
 }
 
 /* footer css */
-
-/* Basic styling for the footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
 }
-
-
 
 .expandable-container3 {
   max-height: 12vh;
@@ -160,9 +140,6 @@ footer {
 cursor: pointer;
 }
 
-/* Apply the animation to the element with the ID "animatedDiv" */
-
-
 .contacts {
   font-size: 3rem;
   margin-bottom: 1vh;
@@ -178,37 +155,30 @@ margin-right: 2vh;
   cursor: pointer;
 }
 
-
-/* Styling for the footer content */
 .footer-content {
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* Styling for footer links */
 .footer-links a {
   color: #ccc;
   text-decoration: none;
   margin-right: 2vw;
 }
 
-/* Change link color on hover */
 .footer-links a:hover {
   color: #ff9900;
 }
 
-/* Styling for social icons */
 .footer-social a {
   color: white;
   font-size: 2rem;
   margin: 0 1vw;
 }
 
-/* Adjust icon colors on hover */
 .footer-social a:hover {
   color: #ff9900;
 }
-
 
 @media (max-width: 600px) {
   #heder{
@@ -228,7 +198,6 @@ margin-right: 2vh;
  }
 
 }
-
 
 @media (min-width: 600px) and (max-width: 800px){
   #heder{
